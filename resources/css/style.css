@@ -3,14 +3,34 @@ html {
     font-size: 16px;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 400;
-    color: grey;
+    color: #363636;
 }
 
-h1{
+h1 {
     font-size: 2.5rem;
     font-weight: 900;
+    margin-bottom: 1rem;
 }
 
+h2 {
+    font-size: 2.125rem;
+    font-weight: 900;
+    margin-bottom: 24px;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 8px;
+}
+
+a {
+    color: deepskyblue;
+}
 .main-content {
     position: relative;
     top: 64px;
@@ -43,6 +63,7 @@ header nav ul {
 
 header nav a {
     margin-left: 16px;
+    color: #202020;
 }
 
 /* Banner */
@@ -64,10 +85,6 @@ header nav a {
     margin-left: 24px;
 }
 
-.banner h1 {
-    margin-bottom: 1rem;
-}
-
 .banner p{
     margin-bottom: 1rem;
     font-size: 1.5rem;
@@ -80,4 +97,66 @@ header nav a {
     padding: 8px 0;
     background-color: gray;
     border: 0;
+}
+
+/* Information */
+.information {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+
+.big-card {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px;
+}
+
+.big-card img {
+    margin-bottom: 32px;
+}
+.card-group {
+    margin: 16px 0;
+}
+
+.horizontal-card {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.horizontal-card img{
+    width: 35%;
+    margin-right: 16px;
+}
+
+/* Courses */
+.courses {
+    background-color: #f4f4f4;
+    padding: 32px 56px;
+}
+
+.courses h2 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.course-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+    min-width: 350px;
+    background-color: white;
+    margin: 16px;
+}
+
+.card .content{
+    padding: 16px;
 }
