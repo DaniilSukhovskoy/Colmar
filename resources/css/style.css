@@ -1,6 +1,83 @@
+/* Universal Styles */
 html {
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: 400;
     color: grey;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.main-content {
+    position: relative;
+    top: 64px;
+}
+
+/* Header */
+header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+header .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 64px;
+    padding: 0 24px;
+}
+
+header .logotype {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav a {
+    margin-left: 16px;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    padding: 32px 24px;
+}
+
+.banner img {
+    width: 60%;
+}
+
+.banner .content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
+
+.banner h1 {
+    margin-bottom: 1rem;
+}
+
+.banner p{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.banner button {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+    padding: 8px 0;
+    background-color: gray;
+    border: 0;
 }
