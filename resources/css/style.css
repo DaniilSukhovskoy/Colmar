@@ -31,6 +31,11 @@ p {
 a {
     color: deepskyblue;
 }
+
+.highlight {
+    background-color: #f4f4f4;
+}
+
 .main-content {
     position: relative;
     top: 64px;
@@ -160,3 +165,36 @@ header nav a {
 .card .content{
     padding: 16px;
 }
+
+/* Thesis */
+.programms {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+
+.programms video {
+    margin-bottom: 24px;
+}
+
+.programms .card-group {
+    margin: 32px 0;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    top: 64px;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px 64px;
+    border-top: 1px solid black ;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer a {
+    margin-left: 16px;
+    color: #202020;
