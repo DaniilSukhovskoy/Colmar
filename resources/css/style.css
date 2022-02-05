@@ -8,13 +8,13 @@ html {
 
 h1 {
     font-size: 2.5rem;
-    font-weight: 900;
+    font-weight: 800;
     margin-bottom: 1rem;
 }
 
 h2 {
     font-size: 2.125rem;
-    font-weight: 900;
+    font-weight: 800;
     margin-bottom: 24px;
 }
 
@@ -71,6 +71,28 @@ header nav a {
     color: #202020;
 }
 
+header .mobile {
+    display: none;
+  }
+
+@media only screen and (max-width: 600px) {
+    header .desktop{
+        display: none;
+    }
+    
+    header .mobile{
+        display: block;
+        width: 100%;
+    }
+
+    header .mobile ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+}
+
 /* Banner */
 .banner {
     display: flex;
@@ -87,11 +109,11 @@ header nav a {
 .banner .content{
     display: flex;
     flex-direction: column;
-    margin-left: 24px;
+    margin: 24px;
 }
 
 .banner p{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-size: 1.5rem;
 }
 
@@ -102,6 +124,22 @@ header nav a {
     padding: 8px 0;
     background-color: gray;
     border: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .banner {
+        flex-flow: column;
+        padding: 0 0 32px;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    .banner p {
+        margin-bottom: 24px;
+    }
+
 }
 
 /* Information */
@@ -136,6 +174,30 @@ header nav a {
     margin-right: 16px;
 }
 
+@media only screen and (max-width: 600px) {
+    .card-group {
+        width: 100%;
+    }
+
+    .big-card {
+        display: none;
+    }
+
+    .horizontal-card {
+        flex-flow: column;
+        align-items: flex-start;
+    }
+
+    .horizontal-card img{
+        width: 100%;
+        margin: 0;
+    }
+
+    .side-content {
+        padding: 16px;
+    }
+}
+
 /* Courses */
 .courses {
     background-color: #f4f4f4;
@@ -166,20 +228,87 @@ header nav a {
     padding: 16px;
 }
 
+@media only screen and (max-width: 600px) {
+    .courses {
+        background-color: white;
+        padding: 32px 16px;
+    }
+
+    .course-cards {
+        flex-flow: column;
+    }
+
+    .card {
+        background-color: #f4f4f4;
+        margin: 8px;
+        min-width: auto;
+    }
+
+    .card img {
+        display: none;
+    }
+
+    .card .content p {
+        display: none;
+    }
+
+}
+
 /* Thesis */
 .programms {
+   padding: 32px 0 0; 
+}
+
+.programms h2 {
+    text-align: center;
+}
+
+.programms-cards {
     display: flex;
     align-items: top;
     justify-content: space-between;
 }
 
-.programms video {
+.programms-cards .big-card {
+    padding-top: 0;
+}
+
+.programms-cards video {
     margin-bottom: 24px;
 }
 
-.programms .card-group {
-    margin: 32px 0;
+.programms-cards .card-group {
+    margin: 0;
 }
+
+
+@media only screen and (max-width: 600px) {
+
+    .programms .big-card {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    .programms-cards .big-card video{
+        width: 100%;
+    }
+
+    .programms-cards .big-card h3 {
+        display: none;
+    }
+
+    .programms .big-card p {
+        display: none;
+    }
+
+    .programms .card-group {
+        display: none;
+    }
+
+
+}
+
 
 /* Footer */
 footer {
@@ -198,3 +327,15 @@ footer ul {
 footer a {
     margin-left: 16px;
     color: #202020;
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        padding: 16px;
+        border-top: 0;
+    }
+
+    footer ul {
+        display: none;
+    }
+}
